@@ -137,21 +137,24 @@ def main():
     average_self_decision_revenue = df['Self Decision Revenue (€)'].mean()
     average_total_revenue = df['Total Revenue (€)'].mean()
 
-    print(f"Average Menu Queing Time: {average_mean_menu_queue_time}")
+    print(f"\nAverage Menu Queing Time: {average_mean_menu_queue_time}")
     print(f"Average Poke Queing Time: {average_mean_poke_queue_time}")
-    print(f"Average Self Decision Queing Time: {average_mean_self_decision_queue_time}")
-    print(f"Average Queue: {average_mean_queue}")
+    print(f"Average Self Decision Queing Time: {average_mean_self_decision_queue_time}\n")
+
+    print("\033[1m" + "Average Queue: " + "\033[0m" + f"{average_mean_queue}\n")
 
     print(f"Average Menu Count: {average_menu_count}")
     print(f"Average Poke Count: {average_poke_count}")
     print(f"Average Self Decision Count: {average_self_decision_count}")
-    print(f"Average No Food Count: {average_no_food_count}")
-    print(f"Average Total Orders: {average_total_order_count}")
+    print(f"Average No Food Count: {average_no_food_count}\n")
+
+    print("\033[1m" + "Average Total Orders: " + "\033[0m" + f"{average_total_order_count}\n")
 
     print(f"Average Revenue from Menus: {average_menu_revenue}")
     print(f"Average Revenue from Pokes: {average_poke_revenue}")
-    print(f"Average Revenues from Self Decisions: {average_self_decision_revenue}")
-    print(f"Average Total Revenue: {average_total_revenue}")
+    print(f"Average Revenues from Self Decisions: {average_self_decision_revenue}\n")
+
+    print("\033[1m" + "Average Total Revenue: " + "\033[0m" + f"{average_total_revenue}\n")
 
 if __name__ == "__main__":
     main()
